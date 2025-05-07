@@ -28,13 +28,13 @@
      inkscape:window-height="2452"
      id="namedview326"
      showgrid="false"
-     inkscape:zoom="3.4766083"
-     inkscape:cx="252.56321"
-     inkscape:cy="275.57121"
+     inkscape:zoom="6.9532166"
+     inkscape:cx="256.4463"
+     inkscape:cy="126.00015"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="54"
      inkscape:window-maximized="0"
-     inkscape:current-layer="line2d_12"
+     inkscape:current-layer="g238"
      showguides="true" />
   <metadata
      id="metadata2">
@@ -49,7 +49,7 @@
             <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
           </cc:Agent>
         </dc:creator>
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -609,6 +609,19 @@
              cy="60.428711"
              rx="1.626013"
              ry="1.6695868" />
+          <ellipse
+             style="opacity:1;fill:#0e0e0e;fill-opacity:1;stroke:#24df15;stroke-width:7.45908308;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.00702574"
+             id="path1988-3-5-6-2-3"
+             cx="205.51071"
+             cy="126.41003"
+             rx="1.626013"
+             ry="1.6695868" />
+          <circle
+             style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1.26450002;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="path2280-3-3-6-7-6"
+             cx="205.36249"
+             cy="126.51788"
+             r="5.625" />
         </g>
       </g>
       <g

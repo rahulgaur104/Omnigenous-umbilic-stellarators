@@ -16,7 +16,10 @@
    version="1.1"
    id="svg127"
    sodipodi:docname="modB_3d_plot_reversed.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:export-filename="/home/rgaur/omnigenous_umbilic_stellarators/HBT_reverse_current/modB_3d_plot_reversed.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <metadata
      id="metadata131">
     <rdf:RDF>
@@ -25,7 +28,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -43,10 +46,10 @@
      id="namedview129"
      showgrid="false"
      inkscape:zoom="0.52149125"
-     inkscape:cx="1280"
+     inkscape:cx="692.26243"
      inkscape:cy="1280"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="54"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg127" />
   <defs
