@@ -1,0 +1,21 @@
+&INDATA
+  EXTCUR = 1*1
+  NFP = 1
+  NZETA = 128
+ /
+ &FIELDLINES_INPUT
+  NR = 128
+  NZ = 128
+  NPHI = 128
+  RMIN = 0.1
+  RMAX = 2.1
+  ZMIN = -1.3
+  ZMAX = 1.3
+  PHIMIN = 0.0
+  PHIMAX = 3.14158
+  MU = 0.0
+  NPOINC    = 200
+  INT_TYPE  = 'LSODE'
+  FOLLOW_TOL = 1.0E-9
+  PHI_END = 62.831853072
+ /
