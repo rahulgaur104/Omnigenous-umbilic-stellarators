@@ -8,4 +8,8 @@ trace*
 
 *.txt
 
+coil_data_257.npz
+coil_data_129.npz
+
+post_process_coil_data4Bob.py
 
