@@ -30,7 +30,8 @@ for eq, legend, scale in zip(eq_list, legend_list, scale_list):
     theta_grid = np.linspace(0, 2 * np.pi, 300)
     zeta_grid = np.linspace(0, 2 * np.pi, 300)
     grid = LinearGrid(rho=1.0, theta=theta_grid, zeta=zeta_grid)
-    fig = plot_3d(eq, name="|B|", grid=grid)
+    #fig = plot_3d(eq, name="|B|", grid=grid)
+    fig = plot_3d(eq, name="curvature_k2_rho", grid=grid)
 
     # fig.update_xaxes(showgrid=True, gridwidth=2, gridcolor='lightgray', linewidth=2, linecolor='black')
     # fig.update_yaxes(showgrid=True, gridwidth=2, gridcolor='lightgray', linewidth=2, linecolor='black')
@@ -46,13 +47,15 @@ for eq, legend, scale in zip(eq_list, legend_list, scale_list):
 
     config = {
         "toImageButtonOptions": {
-            "filename": f"modB_3d_{keyword}_{legend}",
+            #"filename": f"modB_3d_{keyword}_{legend}",
+            "filename": f"curvature_3d_{keyword}_{legend}",
             "format": "svg",
             "scale": scale,
         }
     }
 
-    save_path_html = os.getcwd() + f"/modB_3d_{keyword}_{legend}.html"
+    #save_path_html = os.getcwd() + f"/modB_3d_{keyword}_{legend}.html"
+    save_path_html = os.getcwd() + f"/curvature_3d_{keyword}_{legend}.html"
     fig.write_html(
         save_path_html, config=config, include_plotlyjs=True, full_html=True
     )

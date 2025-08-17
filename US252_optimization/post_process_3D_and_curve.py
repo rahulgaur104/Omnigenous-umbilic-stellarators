@@ -30,8 +30,10 @@ scale_list = [2, 2]
 
 keyword = "OP"
 
-eq = eq1
-legend = "optimized"
+#eq = eq1
+eq = eq0
+#legend = "optimized"
+legend = "initial"
 scale = 2
 
 #for eq, legend, scale in zip(eq_list, legend_list, scale_list):
@@ -69,43 +71,43 @@ fig.data[0].update(
 
 
 
-m = 2
-NFP_umbilic_factor = 5
-n = NFP_umbilic_factor
-nphi = 300
-
-curve0 = FourierUmbilicCurve.load("curve_omni_m2_NFP5_14.h5")
-phi_arr1 = np.linspace(0, 2 * np.pi * NFP_umbilic_factor, nphi)
-phi1 = phi_arr1.flatten()
-data_curve0 = curve0.compute(["UC"], grid = LinearGrid(zeta = phi1, NFP=1, NFP_umbilic_factor=n))
-theta1 = np.mod((1*data_curve0["UC"] - m * NFP * phi1)/n, 2*np.pi)
-
-custom_grid = Grid(jnp.array([jnp.ones_like(phi1), theta1, phi1]).T)
-curve_data = eq1.compute(["R", "Z"], grid=custom_grid)
-R1 = curve_data["R"]
-Z1 = curve_data["Z"]
-data_curve1 = np.zeros((len(phi1), 3))
-
-arr1 = np.array([R1, phi1, Z1]).T
-data_curve1[:, :] = arr1 
-
-curve2 = FourierRZCurve.from_values(coords=jnp.array(data_curve1), N=15, NFP=1)
-
-fig.add_scatter3d(
-    x=R1*np.cos(phi1),
-    y=R1*np.sin(phi1),
-    z=Z1,
-    marker=dict(
-    size=0,
-    opacity=0,
-    ),
-    line=dict(
-    color="black",
-    width=0.5,
-    dash="solid",
-    ),
-    showlegend=False,
-)
+#m = 2
+#NFP_umbilic_factor = 5
+#n = NFP_umbilic_factor
+#nphi = 300
+#
+#curve0 = FourierUmbilicCurve.load("curve_omni_m2_NFP5_14.h5")
+#phi_arr1 = np.linspace(0, 2 * np.pi * NFP_umbilic_factor, nphi)
+#phi1 = phi_arr1.flatten()
+#data_curve0 = curve0.compute(["UC"], grid = LinearGrid(zeta = phi1, NFP=1, NFP_umbilic_factor=n))
+#theta1 = np.mod((1*data_curve0["UC"] - m * NFP * phi1)/n, 2*np.pi)
+#
+#custom_grid = Grid(jnp.array([jnp.ones_like(phi1), theta1, phi1]).T)
+#curve_data = eq1.compute(["R", "Z"], grid=custom_grid)
+#R1 = curve_data["R"]
+#Z1 = curve_data["Z"]
+#data_curve1 = np.zeros((len(phi1), 3))
+#
+#arr1 = np.array([R1, phi1, Z1]).T
+#data_curve1[:, :] = arr1 
+#
+#curve2 = FourierRZCurve.from_values(coords=jnp.array(data_curve1), N=15, NFP=1)
+#
+#fig.add_scatter3d(
+#    x=R1*np.cos(phi1),
+#    y=R1*np.sin(phi1),
+#    z=Z1,
+#    marker=dict(
+#    size=0,
+#    opacity=0,
+#    ),
+#    line=dict(
+#    color="black",
+#    width=0.5,
+#    dash="solid",
+#    ),
+#    showlegend=False,
+#)
 
 
 
