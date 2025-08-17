@@ -5,7 +5,7 @@
 
 This repository contains all the data and analysis files used to generate and analyze omnigenous umbilic stellarators in this [preprint](https://arxiv.org/abs/2505.04211).
 These script were written to run with commit 24887e4af18f9a2b7da6b5161ccb11d277a4704c
-To reproduce these results, you must 
+To reproduce these results, you must install/build DESC (not the pip install way) and
 
 ```
 git checkout 24887e4af18f9a2b7da6b5161ccb11d277a4704c
