@@ -21,7 +21,7 @@ ripple1 = np.load("ripple_optimized.npz")
 plt.figure(figsize=(6, 5))
 plt.plot(ripple0["rho"], sf(ripple0["ripple"]**(3/2)+1.2e-7, 3, 1), 'r', linewidth=2.5, label='initial')
 plt.plot(ripple1["rho"], sf((ripple1["ripple"])**(3/2), 3, 1), 'g', linewidth=2.5, label='optimized')
-plt.axhline(y=0.001, xmin=0, xmax=0.98, color='k', linestyle='--', linewidth=2.5, label=r'$\epsilon_{\mathrm{eff}}^{3/2} = 0.003$')
+plt.axhline(y=0.001, xmin=0, xmax=0.98, color='k', linestyle='--', linewidth=2.5, label=r'$\epsilon_{\mathrm{eff}}^{3/2} = 0.001$')
 plt.legend(fontsize=22)
 plt.xticks(fontsize=24)
 plt.yticks(fontsize=24)
@@ -40,9 +40,21 @@ ax.yaxis.set_minor_formatter(ticker.LogFormatter(labelOnlyBase=False))
 # Optional: Adjust tick padding if needed
 ax.tick_params(which='both', pad=8)
 
+ax = plt.gca()
+
+# Put legend to the right (outside the axes)
+ax.legend(
+    fontsize=22,
+    loc="center left",          # anchor the legend's left side
+    bbox_to_anchor=(0.35, 0.23), # 2% to the right of the axes, vertically centered
+    borderaxespad=0.0,
+)
+
 plt.xlabel(r'$\rho$',fontsize=30)
 plt.ylabel(r'$\epsilon_{\mathrm{eff}}^{3/2}$',fontsize=30, labelpad=-3)
 plt.tight_layout()  # Ensure everything fits well
-plt.savefig("ripple_comparison.pdf", dpi=400)
+#plt.savefig("ripple_comparison.pdf", dpi=400)
+plt.savefig("ripple_comparison.eps", dpi=400)
 plt.show()
+
 
